@@ -1,0 +1,12 @@
+#125, 200 ve 350 sayılarını X sayısına bölünce kalan hep aynı oluyor.
+#Bu kod, en büyük kalanı veren X sayısını bulur.
+kalanlar=[]
+for n in range (1,125): #Bir sayı kendine bölünüce 0 kalanını verir. Kalanlar eşit olacağından ve her sayıyı kendine bölmek mümkün olmayacağından 125 sınır değer kabul edildi.    
+	kalan1=125%n
+	kalan2=200%n
+	kalan3=350%n
+	if kalan1==kalan2 and kalan2==kalan3:
+		kalanlar.append(kalan1)
+		bölen=n
+kalanlar.sort() #Liste küçükten büyüğe sıralanıyor. kalanlar[-1] diyerek son elemanı alıyoruz.
+print("En büyük kalan= ", kalanlar[-1], "En büyük kalanı veren X sayısı= ", bölen)
