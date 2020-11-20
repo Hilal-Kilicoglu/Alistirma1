@@ -1,0 +1,8 @@
+for n in range(1000,2005,1):
+    #n sayısını abcd bilinmeyen rakamlarından oluşmuş kabul ediyorum.
+    a=n//1000
+    b=(n%1000)//100
+    c=(n%100)//10
+    d=n%10
+    if(a+b+c+d)==(2005-n):
+        print(n)
