@@ -1,0 +1,9 @@
+def palindromikmi(n):
+    if len(str(n))==3 or len(str(n))==4:
+        n=str(n)
+        if n==n[::-1]:
+            print("Bu bir palindromik sayı.")
+        else:
+            print("Bu bir palindromik sayı değil.")
+    else:
+        print("Lütfen 3 ya da 4 basamaklı bir sayı giriniz.")
