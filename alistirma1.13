@@ -1,0 +1,7 @@
+for n in range(10,100,1):
+    a=n
+    for i in range(10,100,1):
+        b=i
+        sayı=int(str(a)+str(b))
+        if sayı==(a+b)*11:
+            print("a= ", str(a), "b= ", str(b))
